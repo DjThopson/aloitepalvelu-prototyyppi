@@ -1,0 +1,73 @@
+.page#etusivu-kirjautunut
+    .wrap
+        .col.span-3#intro
+            p.send-notification
+                span.send-confirmed
+                span.npsb-margin.name Laki yliopistolain 3 §:n muuttamisesta
+                |on lähetetty onnistuneesti oikeusministeriön tarkastettavaksi!
+            h2.subpage Omien aloitteidesi tilanne
+            table.user-petitions
+                thead
+                    tr.header
+                        td.date-label Päivämäärä
+                        td.name-label Aloitteen nimi
+                        td.status-label Aloitteen tila
+                tbody.ownedpetitions
+                    tr
+                        td.date
+                        td.name
+                            a.title(href='#')
+                        td.status
+
+        .col.aside.start-here
+            .aside-content
+                h2 Muut aloitteet
+                p Etsi jo tehtyjä ja käynnissä olevia aloitteita ja vaikutta kannattamalla.
+                form.search
+                    input.keyword(type='text', name='keyword')
+                    input.search(type='image', src='/img/search-button.png', name='search', value='Hae')
+                p Jos et löydä etsimääsi jo alullepannuista aloitteista, voit aloittaa uuden:
+                a.button(href='/#/uusi-aloite') Tee uusi kansalaisaloite
+        div(style='clear:both;')
+
+    .wrap
+        .col.aside.help
+            .aside-content
+                h2 Kaipaatko apua
+                p
+                    | Jos kaipaat apua aloitteen tekemisessä tai sinulla on muuta kysyttävää kansalaisaloitteista,
+                    | ota yhteyttä oikeusministeriöön:
+
+                p puh. 09 160 03 tai 09 578 13
+                p email: osallistymisymparisto.om@om.fi
+
+                p Voit ottaa yhtettä myös yhteydenottolomakkeella:
+                a.button.dummy(href='') Ota yhteyttä
+
+        .col.lift
+            h2 Uusimmat aloitteet
+            ul.latestpetitions
+                li
+                    a.title(href='#')
+            a.more.dummy(href='#') näytä lisää &raquo;
+
+        .col.lift
+            h2 Eduskunnan käsittelemät
+            ul.votablepetitions
+                li
+                    a.title(href='#')
+            a.more.dummy(href='#') näytä lisää &raquo;
+
+        .col.button-group
+            a.dummy(href='#')
+                span Vireillä olevat aloitteet
+            a.dummy(href='#')
+                span Eduskuntaan lähetetyt aloitteet
+            a.dummy(href='#')
+                span Selaa aloitteita aiheittain
+            a.dummy(href='#')
+                span Keskustele aloitteista osallistumisympäristössä
+
+        div(style='clear:both;')
+
+

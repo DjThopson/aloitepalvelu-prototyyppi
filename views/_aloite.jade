@@ -1,0 +1,174 @@
+.page#aloite
+    .wrap
+        .col.span-3
+            h2.subpage Tarkastele aloitteesi tilaa
+            .notification.supports_full
+                |Aloite on kerännyt 50 000 kannattajaa
+            .petition-progress
+                .progress-bar
+                    .green
+                .label-left 0
+                .collected
+                    .label Aloitteen saamat kannatusilmoitukset:
+                    .amount 39412
+                .needed
+                    .label Tarvittavat kannatusilmoitukset
+                        br
+                        | dd.mm.yyyy mennessä:
+                    .amount 10588
+                .label-right 50 000
+            .progress-view-options
+                .chart-view
+                    a.dummy(href='#') Näytä tarkempi kaavio
+                .bar-view
+                    a.dummy(href='#') Näytä peruskaavio
+            h3.intro Aloitteesi eteneminen
+            .petition-phases
+                .phase
+                    .indicator.done
+                    .label Luonnos
+                .phase
+                    .indicator
+                    .label Tarkastettavana
+                .phase
+                    .indicator
+                    .label Julkaistu, äänten keräys käynnissä
+                .phase
+                    .indicator
+                    .label Kannattajalista tarkastettavana
+                .phase
+                    .indicator
+                    .label.no-border Lähetetty eduskuntaan
+
+            .text-content
+                h3.name
+                    span.edit-content.draft.state_variation
+                        a.dummy(href='#') muokkaa
+                span.date 06/07/2011
+                span.type Lakialoite
+                h4 Aloitteen sisältämät asiasanat
+                ul.keywords
+                    li.keyword
+                h4 Aloitteen saama taloudellinen tuki
+                span.support
+                br
+                a.dummy(href='#').support_url
+                hr
+                h4 Ehdotus uudeksi lakitekstiksi
+                    span.edit-content.draft.state_variation
+                        a.dummy(href='#') muokkaa
+                p.law_proposal
+                span.law_proposal_attachments.attachments
+                    a(href='#').law_proposal_attachment.link
+                p.virus-check-ok liitetiedostot virustarkastettu
+                hr
+                h4 Perustelut
+                    span.edit-content.draft.state_variation
+                        a.dummy(href='#') muokkaa
+                p.rationale
+                span.rationale_attachments.attachments
+                    a(href='#').rationale_attachment.link
+                p.virus-check-ok liitetiedostot virustarkastettu
+                h4 Viittaus ajantasaiseen lakiin
+                    span.edit-content.draft.state_variation
+                        a.dummy(href='#') muokkaa
+                .law_references
+                    .reference
+                        .ref_num
+                        .ref_name
+                        .ref_sec
+                        a.ref_url
+                hr
+                div.email-field
+                    h5 Vireillepanijat
+                    ul.initiators
+                        li.email.initiator.confirmed tauno.ranttali@elomaa.com
+                div.email-field
+                    h5 Edustaja
+                    ul.representatives
+                        li.email.initiator.confirmed Pentti Pee
+                div.email-field.no-margin
+                    h5 Varaedustaja
+                    ul.reserves
+                        li.email.initiator.confirmed Seppo Cee
+                div(style="clear:both;")
+                p
+                    | Sovelluksen lopullinen versio korvaa sähköpostiosoitteet vahvistaneiden henkilöiden oikeilla nimillä.
+                div(style="clear:both;")
+
+            .button-row.vevs_approved.state_variation
+                .text-links
+                    a(href='/#') Peruuta ja palaa etusivulle »
+                    a(href='/#') Tallenna ja palaa etusivulle »
+                a.button.submit#send_OM(href='#') Lähetä Oikeusministeriön
+                    br
+                    |tarkastettavaksi
+                div(style='clear:both;')
+            div.notification.om_verifying
+                | Aloite on lähetetty oikeusministeriön tarkistettavaksi.
+                a(href='/#/kansalaisaloite') Palaa etusivulle &raquo;
+
+            .button-row.supported.state_variation
+                .text-links
+                    a Peruuta ja palaa etusivulle »
+                a.button.submit#send_VRK(href='#') Lähetä Väestörekisterikeskuksen
+                    br
+                    |tarkastettavaksi
+                div(style='clear:both;')
+            div.notification.vrk_verifying
+                | Aloite on lähetetty väestörekisterikeskuksen tarkistettavaksi.
+                a(href='/#/kansalaisaloite') Palaa etusivulle &raquo;
+
+            .button-row.parliament.state_variation
+                .text-links
+                    a Peruuta ja palaa etusivulle »
+                a.button.submit#send_to_parliament(href='#') Lähetä
+                    br
+                    |eduskuntaan
+                div(style='clear:both;')
+            div.notification.parliament
+                | Aloite on lähetetty eduskuntaan.
+                a(href='/#/kansalaisaloite') Palaa etusivulle &raquo;
+
+        .col.button-group
+            a(href='#').dummy
+                span Kopioi aloitteen www-osoite leikepöydälle
+            a(href='#').dummy
+                span Keskeytä aloite
+        a(href='#').fb-button.dummy
+            img(src='../img/fb-share.png')
+
+        .col.aside.information
+            .aside-content
+                h2 Aloitteen julkiset tiedot
+                p Vireillepanija:
+                    br
+                    strong#petition_author Petteri Ruponen
+                p Sähköpostiosoite:
+                    br
+                    strong etunimi.sukunimi@osoite.fi
+                p Kaupunki:
+                    br
+                    strong Kaupunki
+                p Internet-sivut:
+                    br
+                    a(href="#").homepage_url
+
+                a.button.edit_public_info.dummy(href='') Muokkaa julkisia tietoja
+
+        .col.aside.help
+            .aside-content
+                h2 Kaipaatko apua
+                p
+                    | Jos kaipaat apua aloitteen tekemisessä tai sinulla on muuta kysyttävää kansalaisaloitteista,
+                    | ota yhteyttä Oikeusministeriöön:
+
+                p puh. 09 160 03 tai 09 578 13
+                p email: osallistymisymparisto.om@om.fi
+
+                p Voit ottaa yhtettä myös yhteydenottolomakkeella:
+                a.button.dummy(href='#') Ota yhteyttä
+
+        div(style='clear:both;')
+
+

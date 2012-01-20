@@ -1,0 +1,137 @@
+!!! html5
+html(lang="fi")
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        title Aloitepalvelu
+
+        link(rel='stylesheet', href='/css/smoothness/jquery-ui-1.8.16.custom.css')
+        link(rel='stylesheet', href='/css/bank.css')
+        link(rel='stylesheet', href='/css/screen.css')
+        //if lte IE 8
+            link(rel='stylesheet', href='/css/ie.css')
+        script(src='js/jquery-1.7.1.min.js')
+        script(src='js/jquery-ui-1.8.16.custom.min.js')
+        script(src='js/raphael-min.js')
+        script(src='js/underscore-min.js')
+        script(src='js/async.min.js')
+        script(src='js/pure_min.js')
+        script(src='js/spine.js')
+        script(src='js/route.js')
+        script(src='js/split.js')
+        script(src='js/jquery.transparency.js')
+        script(src='uploader/fileuploader.js')
+        script(src='application.js')
+        script(type="text/javascript")
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-8690105-6']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+    body
+        div#top-disclaimer
+            | Tämä sivusto on Leonidas Oy:n tekemä prototyyppi oikeusministeriön kansalaisaloite-palvelusta.
+            a(href='#') Ota kantaa!
+        div#main
+            div#main-content
+                div#header
+                    .wrap
+                        h1
+                            a(href='#') Aloitepalvelu
+                        form#login
+                            span
+                            | Kirjaudu palveluun:
+                            br
+                            input.user(type='text', placeholder='Käyttäjänimi')
+                            input.pass(type='password', placeholder='Salasana')
+                            input.go(type='submit', value='OK')
+                        div#logout
+                            span Olet kirjautuneena nimellä:
+                                span.user Pentti Kettunen
+                            form.logout
+                                input.out(type='submit', value='kirjaudu ulos')
+                        div#nav
+                            a.home.dummy(href='#')
+                                span Etusivu
+                            a(href='/#').active Kansalaisaloite
+                            a(href='#').dummy Ohjeet
+                            a(href='#').dummy Näin teet aloitteen
+                            .font-sizes
+                                .label Tekstikoko:
+                                a.normal(href='#').dummy A
+                                a.bigger(href='#').dummy A
+                                a.biggest(href='#').dummy A
+                            a.lang.se(href='#').dummy på svenska
+                div#content
+                    != partial('etusivu')
+                    != partial('uusi_aloite')
+                    != partial('aloite')
+                    != partial('kannatus')
+                    != partial('etusivu-kirjautunut')
+
+                div(style='clear:both;')
+
+        div#footer
+            .wrap
+                span Aloitepalvelu
+                    a#disclaimer-trigger(href='#') PROTOTYYPPI
+                    |- Tietoa palvelusta - Palaute
+        != partial('vetuma')
+
+        div#modal
+            div.overlay
+            div.modal-window
+                h2 Aloitteen luominen vaatii vahvan tunnistautumisen
+                p Tunnistaudu Vetuma-palvelussa verkkopankkitunnuksilla
+                a.button.cancel(href='#') Peruuta
+                a.button.continue(href='/#/vetuma') Jatka Vetumaan
+
+        div#modal-kannatus
+            div.overlay
+            div.modal-window
+                h2 Aloitteen kannattaminen vaatii vahvan tunnistautumisen
+                p Tunnistaudu Vetuma-palvelussa verkkopankkitunnuksilla
+                a.button.cancel(href='#') Peruuta
+                a.button.continue(href='/#/vetuma') Jatka Vetumaan
+
+        div#modal-aloite
+            div.overlay
+            div.modal-window
+                h2 Aloitteen katselu vaatii vahvan tunnistautumisen
+                p Tunnistaudu Vetuma-palvelussa verkkopankkitunnuksilla
+                a.button.cancel(href='#') Peruuta
+                a.button.continue(href='/#') Jatka Vetumaan
+
+        div#modal-disclaimer
+            div.overlay
+            div.modal-window
+                h2 Aloitepalvelu.fi - prototyyppi
+
+                p Tämä sivusto on Leonidas Oy:n tuottama prototyyppi oikeusministeriön tulevasta, 2012 aikana hankittavasta ja toteutettavasta kansalais- ja kuntalaisaloitepalvelusta. Tulevan palvelun tavoitteena on mahdollistaa uuden kansalaisaloitelain mukainen aloitteiden kannatusilmoituksien verkkokeräys.Prototyypissä on toteutettu käyttötapauksina kansalaisaloitteen laadinta, aloitteen seuranta sekä aloitteen kannattaminen.
+
+                p Pääset tutustumaan prototyyppiin alla olevista linkeistä. Prototyyppiä ei ole suunniteltu toimimaan kaikilla selaimilla ja laitteilla.
+
+                p Huomaa, että tämä on sinänsä oikeaan vaatimusmäärittelyyn karkeasti perustuva esimerkkitoteutus, joka ei kuitenkaan täytä järjestelmän lopullisia vaatimuksia. Varsinainen toteutus voi poiketa prototyypistä merkittävästi.
+
+                p
+                | Aloitepalvelu on osa Osallistumisympäristö-hanketta (ks.&nbsp;
+                a(href='http://www.osallistumisymparisto.fi') www.osallistumisymparisto.fi
+                | ). Lisätietoja ja palautetta: osallistumisymparisto.om@om.fi.
+
+
+                p
+                    a.button.left(href='/#/kansalaisaloite') Luo uusi aloite
+                    a.button.right(href='/#/kannatus') Kannata aloitetta
+                p
+                    a(href='/img/kommentointinakyma.png') Virkamiehen hyväksyntänäkymän luonnos
+                p
+                    | Osallistu tulevaa palvelua koskevaan kyselyyn
+                    a(href='https://docs.google.com/a/leonidasoy.fi/spreadsheet/viewform?hl=en_US&formkey=dFJncS0tU2FlVm5RQjhpY1pRdGxqTEE6MQ#gid=0', target='_blank') täällä
+                    | .
+                p
+                    a(href='http://www.om.fi', target='_blank') Oikeusministeriö - www.om.fi
+                    br
+                    a(href='http://www.leonidasoy.fi', target='_blank') Leonidas Oy - www.leonidasoy.fi

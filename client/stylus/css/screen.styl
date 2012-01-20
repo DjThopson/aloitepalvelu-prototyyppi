@@ -1,0 +1,1385 @@
+@font-face
+  font-family 'OpenSans'
+  src url('../fonts/open-sans/OpenSans-Regular-webfont.eot')
+  src url('../fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/open-sans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg')
+  font-weight 400
+  font-style normal
+
+@font-face
+  font-family 'OpenSans'
+  src url('../fonts/open-sans/OpenSans-Italic-webfont.eot')
+  src url('../fonts/open-sans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-Italic-webfont.woff') format('woff'), url('../fonts/open-sans/OpenSans-Italic-webfont.ttf') format('truetype'), url('../fonts/open-sans/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg')
+  font-weight 400
+  font-style italic
+
+@font-face
+  font-family 'OpenSans'
+  src url('../fonts/open-sans/OpenSans-Bold-webfont.eot')
+  src url('../fonts/open-sans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/open-sans/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/open-sans/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg')
+  font-weight 700
+  font-style normal
+
+@font-face
+  font-family 'OpenSans'
+  src url('../fonts/open-sans/OpenSans-BoldItalic-webfont.eot')
+  src url('../fonts/open-sans/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-BoldItalic-webfont.woff') format('woff'), url('../fonts/open-sans/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('../fonts/open-sans/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg')
+  font-weight 700
+  font-style italic
+
+
+@font-face
+  font-family 'OpenSansSemibold'
+  src url('../fonts/open-sans/OpenSans-Semibold-webfont.eot')
+  src url('../fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-Semibold-webfont.woff') format('woff'), url('../fonts/open-sans/OpenSans-Semibold-webfont.ttf') format('truetype'), url('../fonts/open-sans/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg')
+  font-weight normal
+  font-style normal
+
+@font-face
+  font-family 'OpenSansSemibold'
+  src url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.eot')
+  src url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.woff') format('woff'), url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg')
+  font-weight normal
+  font-style italic
+
+.ui-form
+  background #f2f2f2
+  border 1px solid #fff
+  padding 20px
+  margin-bottom 20px
+  position relative
+  zoom 1
+  behavior url(/js/PIE.htc)
+  -webkit-box-shadow 0px 2px 5px #b3b5b6
+  -moz-box-shadow 0px 2px 5px #b3b5b6
+  box-shadow 0px 2px 5px #b3b5b6
+  input[type=text],
+  input[type=password],
+  textarea
+    border 1px solid #a1a1a1
+    background #fff
+    padding 3px 5px
+    font-family 'OpenSans'
+    font-weight normal
+    color #333
+    font-size 14px
+    -webkit-border-radius 2px
+    -moz-border-radius 2px
+    border-radius 2px
+    position relative
+    zoom 1
+    behavior url(/js/PIE.htc)
+    width 100%
+    margin-bottom 10px
+  .field-area
+    display inline
+    float left
+    width auto
+    margin-right 10px
+    .small
+      width 60px
+      display inline-block
+      float left
+      clear left
+    .medium
+      width 318px
+      float left
+      clear left
+    label
+      font-size 13px
+      color #333
+      float left
+    p
+      font-style italic
+      color #666
+      font-size 14px
+      margin 24px 4px 0 4px
+  .no-margin
+    margin-right 0
+  .attachments
+  input[type=text]:focus,
+  input[type=password]:focus,
+  input[type=text]:hover,
+  input[type=password]:hover,
+  textarea:focus,
+  textarea:hover
+    outline none
+    border-color #d0d0d0
+
+  h3
+    font-size 14px
+    color #333
+    display block
+    font-family 'OpenSansSemibold'
+    margin 10px 0
+    line-height 14px
+  .field.radio
+    .input-btns
+      label
+        display inline-block
+        color #fff
+        padding 8px 16px
+        position relative
+        cursor pointer
+        background #818F98 url("../img/button-back-gray.png") repeat-x left bottom
+        border 1px solid #495764
+        border-left-color #828f98
+        text-shadow 0px -1px 1px rgba(0,0,0,0.2)
+        font-family 'OpenSansSemibold'
+        -moz-user-select none
+        -webkit-user-select none
+        user-select none
+        input
+          position absolute
+          left -99999px
+          top 0
+      label.selected
+        background #9dc932 url("../img/label-selected-back.png") repeat-x left top
+        border-color #75a230
+      label:first-child
+        border-top-left-radius 6px
+        border-radius-topleft 6px
+        border-bottom-left-radius 6px
+        border-radius-bottomleft 6px
+      label:last-child
+        border-top-right-radius 6px
+        border-radius-topright 6px
+        border-bottom-right-radius 6px
+        border-radius-bottomright 6px
+  .email-field
+    float left
+    .email-input
+      cursor text
+      min-height 100px
+      padding 3px
+      width 211px
+      float left
+      border-top 1px solid #a1a1a1
+      border-bottom 1px solid #a1a1a1
+      border-left 1px dashed #d0d0d0
+      border-right 1px dashed #d0d0d0
+      background #fff
+      ul
+        margin 0
+        padding 0
+        list-style none
+        li
+          background #c7e67b
+          border-radius 4px
+          position relative
+          zoom 1
+          behavior url(/js/PIE.htc)
+          padding 2px 3px
+          margin-bottom 3px
+          font-size 12px
+          a.remove
+            float right
+            color #4c7900
+            font-weight bold
+            margin-right 3px
+            cursor pointer
+          a.remove:hover
+            color #000
+      textarea
+        resize none
+        border none
+        background transparent
+        padding 0
+        margin 0
+        padding 2px 3px
+        overflow auto
+        font-size 12px
+  .email-field.first
+    .email-input
+      border-left 1px solid #a1a1a1
+  .email-field.last
+    .email-input
+      border-right 1px solid #a1a1a1
+
+  .keyword-field
+    float left
+    .keyword-input
+      cursor text
+      min-height 70px
+      padding 3px 0 0 3px
+      width 650px
+      float left
+      border 1px solid #a1a1a1
+      background #fff
+      .keyword
+        background #c7e67b
+        border-radius 4px
+        position relative
+        zoom 1
+        behavior url(/js/PIE.htc)
+        padding 2px 3px
+        margin-bottom 3px
+        margin-right 3px
+        font-size 12px
+        float left
+        a.remove
+          float right
+          color #4c7900
+          font-weight bold
+          margin-right 3px
+          margin-left 5px
+          cursor pointer
+        a.remove:hover
+          color #000
+      textarea
+        height 21px
+        resize none
+        border none
+        background transparent
+        padding 0
+        margin 0
+        padding 2px 2px
+        overflow hidden
+        font-size 12px
+        float left
+        width auto
+  .law_reference
+    position relative
+    clear both
+    .lawsuggestions
+      clear both
+      background-color #FFF
+      border 1px solid #CCC
+      padding 2px 4px 0 2px
+      width 448px
+      margin-left 200px
+      position absolute
+      top 48px
+      z-index 1000
+      .lawsuggestion
+        padding 2px
+        margin-bottom 6px
+        font-size 13px
+        clear both
+        .number
+          display inline-block
+          width 20%
+          vertical-align top
+        .name
+          display inline-block
+          width 80%
+      .lawsuggestion:hover, .lawsuggestion.active
+        background-color #dfe8ec
+        cursor pointer
+    .lawreflink
+      position relative
+      float left
+      padding 0
+      margin-left 0
+      top -5px
+      margin-bottom 14px
+      background none
+      border none
+      z-index 0
+
+#submit-add-form
+  float right
+
+.petition-progress
+  position relative
+  width 100%
+  height 114px
+  .progress-bar
+    width 645px
+    height 33px
+    background url('../img/support-grey-bg.png') repeat-x top left
+    position relative
+    zoom 1
+    behavior url(/js/PIE.htc)
+    margin 0 auto
+    .green
+      width 60%
+      height 31px
+      border 1px solid #75a230
+      background url('../img/support-green-bg.png') repeat-x top left
+      position relative
+      zoom 1
+      behavior url(/js/PIE.htc)
+  .label-left, label-right, .collected, .needed
+    font-size 13px
+    color #333
+  .label-left
+    position absolute
+    left 20px
+    top 40px
+  .label-right
+    position absolute
+    right 10px
+    top 40px
+  .collected
+    .label
+      width 126px
+      position absolute
+      top 46px
+      left 62px
+    .amount
+      position absolute
+      top 46px
+      left 196px
+  .needed
+    .label
+      width 195px
+      position absolute
+      top 46px
+      left 327px
+    .amount
+      position absolute
+      top 46px
+      left 526px
+      display inline-block
+  .needed .amount, .collected .amount
+    width 84px
+    height 35px
+    padding-top 3px
+    background url('../img/support-amount-bg.png') no-repeat top center
+    font-size 19px
+    color #666
+    font-weight bold
+    text-align center
+
+.progress-view-options
+  width 100%
+  height 20px
+  margin-bottom 24px
+  .chart-view
+    background url('../img/chart-icon.png') no-repeat top right
+    float right
+    cursor pointer
+    display inline-block
+    margin-right 20px
+    a
+      font-size 13px
+      margin-right 20px
+      padding-bottom 2px
+  .bar-view
+    background url('../img/bar-icon.png') no-repeat top right
+    float right
+    cursor pointer
+    display inline-block
+    margin-right 20px
+    a
+      font-size 13px
+      margin-right 20px
+      padding-bottom 2px
+
+
+.text-content
+  background #f2f2f2
+  border 1px solid #fff
+  padding 20px
+  position relative
+  zoom 1
+  behavior url(/js/PIE.htc)
+  -webkit-box-shadow 0px 2px 5px #b3b5b6
+  -moz-box-shadow 0px 2px 5px #b3b5b6
+  box-shadow 0px 2px 5px #b3b5b6
+  span.type
+    margin-left 180px
+  p, a
+    font-size 13px
+    line-height 16px
+  span.attachments a, p.virus-check-ok
+    display block
+    width 636px
+    text-align right
+    line-height 24px
+    margin-top 0px
+  a.pdf
+    background url('../img/file-pdf.png') no-repeat top right
+    padding-right 24px
+  a.link
+    background url('../img/file-link.png') no-repeat center right
+    padding-right 24px
+  a.doc
+    background url('../img/file-doc.png') no-repeat top right
+    padding-right 24px
+  p.virus-check-ok
+    background url('../img/file-ok.png') no-repeat top right
+    padding-right 24px
+    font-style italic
+    color #666
+  span.reference_name
+    margin-left 180px
+  .email-field
+    width 32%
+    float left
+    margin-right 2%
+    ul
+      list-style none
+      padding 0
+      margin 0
+      font-size 13px
+      margin-top 14px
+      li
+        line-height 13px
+        padding 4px 5px 5px 6px
+        background-color #e7e7e7
+        border 1px solid #FFF
+        margin-bottom 3px
+        border-radius 4px
+        -webkit-box-shadow 0px 1px 2px #6d6d6d
+        -mox-box-shadow 0px 1px 2px #6d6d6d
+        box-shadow 0px 1px 2px #6d6d6d
+        /*position relative
+        zoom 1
+        behavior url(/js/PIE.htc)*/
+      li.confirmed
+        background url('../img/file-ok.png') no-repeat top right
+        background-color #ebebeb
+      li.pending
+        background url('../img/remove-email.png') no-repeat 192px center
+        color #777
+        cursor pointer
+  .no-margin
+    margin-right 0
+  .edit-content
+    width auto
+    height 20px
+    display inline-block
+    background url('../img/edit-icon.png') no-repeat top right
+    float right
+    cursor pointer
+    a
+      font-family 'OpenSans'
+      font-weight normal
+      font-size 13px
+      margin-right 20px
+      padding-bottom 2px
+
+  .law_references
+    clear both
+    margin-top 14px
+    .reference
+      width 100%
+      margin-bottom 6px
+      font-size 13px
+      clear both
+      .ref_num
+        display inline-block
+        width 20%
+        vertical-align top
+      .ref_name
+        display inline-block
+        width 60%
+      .ref_sec
+        display inline-block
+        width 20%
+  ul.keywords
+    width 100%
+    height 22px
+    clear both
+    list-style none
+    padding 0
+    font-size 13px
+    margin 14px 0 24px 0
+    li
+      float left
+      line-height 13px
+      padding 4px 5px 5px 6px
+      background-color #e7e7e7
+      border 1px solid #FFF
+      margin 0 3px
+      border-radius 4px
+      -webkit-box-shadow 0px 1px 2px #6d6d6d
+      -mox-box-shadow 0px 1px 2px #6d6d6d
+      box-shadow 0px 1px 2px #6d6d6d
+      position relative
+      zoom 1
+      behavior url(/js/PIE.htc)
+
+.button-row
+  position relative
+  margin-top 14px
+  .text-links
+    height 14px
+    position absolute
+    top 50%
+    margin-top -7px
+    vertical-align bottom
+    p
+      display inline-block
+      margin 0 5px 0 0
+    a
+      display inline-block
+      margin-right 20px
+      cursor pointer
+  .submit
+    float right
+    margin-top 5px
+    padding 14px 26px 15px 26px
+.notification
+  background url("../img/file-ok.png") no-repeat left center
+  padding 20px 20px 20px 25px
+  display none
+.supports_full
+  padding 0 20px 0 25px
+  margin 0 0 23px 14px
+
+.petition-phases
+  width 660px
+  height 50px
+  padding 10px 20px 50px 25px
+  position relative
+  .phase
+    position relative
+    width 130px
+    height 50px
+    display block
+    float left
+    vertical-align top
+    .indicator
+      width 20px
+      height 20px
+      position absolute
+      bottom 0px
+      left 0px
+      background url('../img/progress-undone.png') no-repeat top left
+    .indicator.done
+      background-image url('../img/progress-done.png')
+    .label
+      width 105px
+      font-size 13px
+      border-bottom 1px solid #a1a1a1
+      position absolute
+      bottom 9px
+      left 21px
+      padding-bottom 4px
+      padding-left 2px
+      line-height 15px
+    .no-border
+      border-bottom none
+.frontpage-illustration
+  padding 20px 20px 24px 25px
+
+hr
+  border-top 1px solid #e6e6e6
+  border-bottom 1px solid #FFF
+  border-left none
+  border-right none
+  margin 20px 0
+
+body
+  background #f2f2f2
+  color #333
+  font-family 'OpenSans', Helvetica, Arial
+  font-weight normal
+  font-size 14px
+  padding 0
+  margin 0
+
+a
+  text-decoration none
+  color #1e708a
+a:active
+  text-decoration none
+  color #333
+a:hover
+  text-decoration none
+  color #333
+
+a img
+  border none
+
+h1, h2, h3, h4, h5, h6
+  color #216885
+  margin-top 0
+
+h1
+  font-size 32px
+h2
+  font-size 28px
+h2.subpage
+  font-size 22px
+h3
+  font-size 16px
+  color #333
+  display block
+  font-family 'OpenSansSemibold'
+h3.intro
+  color #216885
+  margin-bottom 0
+h4
+  font-size 14px
+  color #333
+  display block
+  font-family 'OpenSansSemibold'
+  margin 14px 0 6px 0
+  line-height 14px
+  .required
+    font-size 13px
+    font-weight normal
+    color #F57F02
+    margin-left 6px
+.required-text
+  font-size 13px
+  font-weight normal
+  color #F57F02
+  margin-left 6px
+  float right
+  margin-top -18px
+h5
+  font-size 14px
+  color #333
+  font-family 'OpenSans'
+  font-weight normal
+  margin 10px 0 5px 0
+  line-height 14px
+h6
+  font-size 14px
+
+.wrap
+  width 960px
+  margin 0 auto
+
+#main
+  background #fff url('../img/main-back.jpg') no-repeat center top
+
+#main-content
+  background transparent url('../img/main-content-back.png') repeat-x left bottom
+  padding-bottom 40px
+  border-bottom 1px solid #fff
+
+.page
+  padding-top 25px
+
+#header
+  height 140px
+  background transparent url('../img/header-back.png') repeat-x left top
+  color #fff
+  padding 10px 0 0 0
+
+  h1
+    float left
+    margin 0
+    a
+      text-indent -99999px
+      display block
+      width 310px
+      height 80px
+      background transparent url('../img/header-logo.png') repeat-x left top
+
+  #login
+    padding 0
+    margin 0px 0 0 0
+    float right
+    line-height 40px
+    font-size 13px
+    a.fb, a.google
+      width 24px
+      height 24px
+      display inline-block
+      vertical-align middle
+      margin-left 10px
+    a.fb
+      background transparent url('../img/icon-fb.png') repeat-x left top
+    a.google
+      background transparent url('../img/icon-google.png') repeat-x left top
+      margin-right 10px
+    .user, .pass
+      margin 0 4px 0 0
+      border 1px solid #a1a1a1
+      padding 3px 5px
+      width 120px
+      font-family 'OpenSans', Helvetica, Arial
+      color #333
+      font-size 14px
+      font-style italic
+    .user:focus, .pass:focus
+      outline none
+      -webkit-box-shadow 0px 0px 5px rgba(255,255,255,0.25)
+      -mox-box-shadow 0px 0px 5px rgba(255,255,255,0.25)
+      box-shadow 0px 0px 5px rgba(255,255,255,0.25)
+      border-color #d0d0d0
+    .go
+      background #818f98 url('../img/button-back-gray.png') repeat-x left bottom
+      color #fff
+      border 1px solid #495764
+      border-radius 2px
+      padding 3px 5px 4px 5px
+      margin 0
+      font-size 14px
+      line-height 15px
+  #logout
+    padding 0
+    margin 0px 0 0 0
+    float right
+    clear right
+    line-height 40px
+    font-size 13px
+    span
+      float right
+      clear right
+    .user
+      font-weight bold
+      margin-left 4px
+    .out
+      background #818f98 url('../img/button-back-gray.png') repeat-x left bottom
+      color #fff
+      border 1px solid #495764
+      border-radius 2px
+      padding 3px 5px 4px 5px
+      margin 0
+      font-size 14px
+      line-height 15px
+      float right
+      clear right
+  #nav
+    height 40px
+    font-size 14px
+    font-family 'OpenSansSemibold'
+    font-weight normal
+    text-shadow -1px -1px 1px #1e6f8a
+    margin-top 10px
+    width 100%
+    float left
+    background #2685a4 url('../img/nav-back.png') repeat-x left top
+    overflow hidden
+    border-bottom-left-radius 6px
+    border-bottom-right-radius 6px
+    border-radius-bottomleft 6px
+    border-radius-bottomright 6px
+    a
+      color #fff
+      display block
+      padding 7px 24px
+      line-height 26px
+      height 26px
+      float left
+      text-transform uppercase
+    a:hover, a.active
+      background #2685a4 url('../img/nav-back.png') repeat-x left bottom
+    a.home
+      padding 6px 24px 8px 24px
+      span
+        display block
+        width 27px
+        height 26px
+        background transparent url('../img/icon-home.png') no-repeat center center
+        text-indent -99999px
+    a.lang
+      float right
+      text-transform none
+      font-size 13px
+    a.selected
+      background #2685a4 url('../img/nav-back.png') repeat-x left bottom
+      color #89e2ff
+    .font-sizes
+      display inline-block
+      float right
+      padding 0 12px
+      .label
+        float left
+        line-height 40px
+        color #FFF
+        font-weight normal
+        font-family 'OpenSans'
+        font-size 13px
+        margin-right 4px
+      a
+        text-transform uppercase
+        color #89e2ff
+        padding 6px 2px 8px 2px
+      a.normal
+        color #FFF
+        font-size 13px
+        margin-top 1px
+      a.bigger
+        font-size 15px
+      a.biggest
+        font-size 17px
+        margin-top -1px
+      a:hover
+        color #FFF
+        background none
+
+.col
+  margin 0 10px
+  width 220px
+  float left
+
+.col.span-2
+  width 460px
+
+.col.span-3
+  width 700px
+
+.col.aside
+  float right
+  clear right
+  border 1px solid #a5c6d1
+  width 214px
+  background transparent
+  padding 2px
+  margin-left 0
+  margin-bottom 20px
+  .aside-content
+    background #f0f5f7
+    border 1px solid #a5c6d1
+    padding 10px
+    h2
+      color #f57f02
+      font-size 18px
+      font-family 'OpenSansSemibold'
+      font-weight normal
+      margin 0
+    .contact-link
+      margin-left 27px
+
+.col.aside.help
+  font-size 12px
+
+.start-here
+  .search
+    input
+      display inline-block
+      vertical-align middle
+    .keyword
+      border 1px solid #a1a1a1
+      height 28px
+      padding 0px 5px
+      line-height 28px
+      width 160px
+      margin-right 4px
+      font-family 'OpenSans', Helvetica, Arial
+      font-size 14px
+      font-style italic
+      color #333
+    .keyword:focus
+      outline none
+
+#help
+  .contact-link
+    display block
+    text-align center
+
+#uusi-aloite
+  .ui-form
+    .field.date
+      width 180px
+      display inline-block
+      vertical-align top
+      input
+        width 150px
+      img
+        margin 3px
+        vertical-align top
+    .field.radio
+      width 424px
+      display inline-block
+      margin-left 53px
+      vertical-align top
+    .field.no-margin
+      margin-left 0
+    .field.url
+      margin-top 14px
+    .validation-error
+      text-align right
+      color #F57F02
+      font-style italic
+      font-size 14px
+      font-family OpenSansSemibold
+      padding-top 10px
+      display none
+
+.ingress
+  font-size 18px
+  font-style italic
+
+#intro
+  padding-bottom 30px
+  position relative
+  .process
+    margin 10px 0 20px 0
+
+#my-petitions
+  display none
+  padding-bottom 30px
+  p.send-notification
+    margin 5px 0 20px 0
+    .send-confirmed
+      display inline-block
+      width 20px
+      height 20px
+      background url('../img/file-ok.png') no-repeat bottom left
+      vertical-align middle
+    .npsb-margin
+      margin 0 4px
+      font-style italic
+      font-weight bold
+  .user-petitions
+    font-size 14px
+    width 100%
+    border-collapse collapse
+    margin -8px 0 0 0
+    padding 0
+    background rgba(255, 255, 255, 0.5)
+    .date-label
+      width 16%
+    .name-label
+      width 60%
+    .status-label
+      width 24%
+    .date-label, .name-label, .status-label
+      font-size 13px
+      font-family 'OpenSansSemibold'
+      color #606060
+      border-bottom 1px solid #dae8ed
+      padding 3px 8px
+    td
+      padding 3px 8px
+    td.status
+      font-style italic
+
+body.logged
+  #my-petitions
+    display block
+  #intro
+    display none
+
+
+.lift
+  background #f2f2f2
+  -webkit-box-shadow 0px 2px 5px #b3b5b6
+  -mox-box-shadow 0px 2px 5px #b3b5b6
+  box-shadow 0px 2px 5px #b3b5b6
+  position relative
+  zoom 1
+  behavior url(/js/PIE.htc)
+  border 1px solid #fff
+  margin-bottom 20px
+  width 218px
+  min-height 178px
+  h2
+    font-size 16px
+    font-family 'OpenSansSemibold'
+    font-weight normal
+    background #9dca32 url('../img/lift-header-back.png') repeat-x left bottom
+    background-color #9dca32
+    color #fff
+    padding 4px 8px
+    -webkit-border-radius 6px
+    -moz-border-radius 6px
+    border-radius 6px
+    position relative
+    zoom 1
+    behavior url(/js/PIE.htc)
+    margin 2px
+  h3
+    font-size 16px
+    margin 0
+    padding 9px
+    color #333
+    font-family 'OpenSansSemibold'
+    font-weight normal
+  p
+    padding 0 9px 9px 9px
+    margin 0
+  ul
+    list-style none
+    padding 0
+    margin 9px
+    li
+      padding 4px 0 5px 13px
+      background url('../img/bullet.png') no-repeat 0px 8px
+a.more
+  float right
+  margin 0 9px 9px 0
+  font-size 13px
+
+.lift.span-2
+  width 458px
+
+.lift.span-3
+  width 698px
+
+.button-group
+  position relative
+  zoom 1
+  behavior url(/js/PIE.htc)
+  -webkit-border-radius 6px
+  -moz-border-radius 6px
+  border-radius 6px
+  overflow hidden
+  margin-bottom 20px
+  a
+    background #36a1c4 url('../img/big-button-back.png') repeat-x left bottom
+    color #fff
+    display block
+    font-size 14px
+    font-family 'OpenSansSemibold'
+    font-weight normal
+    border-top 1px solid #6bbbd5
+    position relative
+    zoom 1
+    behavior url(/js/PIE.htc)
+    span
+      display block
+      padding 10px 8px 10px 20px
+      margin-left 8px
+      line-height 16px
+      background transparent url('../img/big-button-arrow.png') no-repeat left center
+      text-shadow 0px -1px 1px #1f688f
+  a.deactive
+    background #aaa url('../img/big-button-back-grey.png') repeat-x left bottom
+    border-top 1px solid #d6d6d6
+    span
+      background transparent url('../img/big-button-arrow-grey.png') no-repeat left center
+      text-shadow 0px -1px 1px #666
+  a:hover
+    span
+      text-shadow 0px 0px 5px #89E2FF
+  a.deactive:hover
+    span
+      text-shadow 0px -1px 1px #666
+  a:first-child
+    border-top-left-radius 6px
+    border-top-right-radius 6px
+    border-radius-topleft 6px
+    border-radius-topright 6px
+  a:last-child
+    border-bottom-left-radius 6px
+    border-bottom-right-radius 6px
+    border-radius-bottomleft 6px
+    border-radius-bottomright 6px
+
+.fb-button
+  display inline-block
+  width 216px
+  height 42px
+  padding 0
+  margin 0 0 24px 10px
+  text-align center
+
+#footer
+  .wrap
+    text-align center
+    padding 20px 0 50px 0
+    font-size 13px
+
+.button
+  background #36a1c4 url('../img/big-button-back.png') repeat-x left bottom
+  color #fff
+  display inline-block
+  font-size 14px
+  font-family 'OpenSansSemibold'
+  font-weight normal
+  padding 8px 14px 10px 14px
+  text-align center
+  line-height 18px
+  text-shadow 0px -1px 1px #1f688f
+  border-radius 6px
+  position relative
+  zoom 1
+  behavior url(/js/PIE.htc)
+  -webkit-box-shadow 0px 2px 5px #b3b5b6
+  -moz-box-shadow 0px 2px 5px #b3b5b6
+  box-shadow 0px 2px 5px #b3b5b6
+.button:hover
+  color #fff
+  text-shadow 0px 0px 5px #89E2FF
+
+
+.page
+  display none
+
+
+
+
+.qq-uploader
+  position relative
+  width 100%
+  text-align right
+
+.qq-upload-button
+  display block
+  float right
+  color #fff
+  padding 8px 16px
+  position relative
+  cursor pointer
+  background #818F98 url("../img/button-back-gray.png") repeat-x left bottom
+  border 1px solid #495764
+  border-left-color #828f98
+  text-shadow 0px -1px 1px rgba(0,0,0,0.2)
+  font-family 'OpenSansSemibold'
+  -moz-user-select none
+  -webkit-user-select none
+  user-select none
+  border-radius 6px
+  position relative
+  zoom 1
+  behavior url(/js/PIE.htc)
+  input
+    height 37px
+
+.qq-upload-button-focus
+  outline none
+  background #9dc932 url("../img/label-selected-back.png") repeat-x left top
+  border-color #75a230
+
+.qq-upload-drop-area
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    min-height 40px
+    z-index 2
+    background #1e6f8a
+    text-align center
+    border-radius 6px
+    zoom 1
+    behavior url(/js/PIE.htc)
+
+.qq-upload-drop-area span
+    display block
+    position absolute
+    top 50%
+    width 100%
+    margin-top -8px
+    font-size 16px
+    color #fff
+
+.qq-upload-drop-area-active
+  background #317b96
+
+.qq-upload-list
+  margin 0px 0px 50px 0px
+  width 400px
+  float left
+  padding 0
+  list-style none
+  text-align left
+
+.qq-upload-list li
+  margin 0
+  padding 0 0 0 20px
+  line-height 18px
+  font-size 14px
+  font-family 'OpenSansSemibold'
+  background transparent url('../img/file-attach.png') no-repeat left center
+
+.qq-upload-file,
+.qq-upload-spinner,
+.qq-upload-size,
+.qq-upload-cancel,
+.qq-upload-failed-text
+  margin-right 7px
+
+.qq-upload-file
+  display inline
+
+.qq-upload-spinner
+  display inline-block
+  background url("loading.gif")
+  width 15px
+  height 15px
+  vertical-align text-bottom
+
+.qq-upload-size,
+.qq-upload-cancel
+  font-size 12px
+  color #808080
+
+.qq-upload-failed-text
+  display none
+.qq-upload-fail .qq-upload-failed-text
+  display inline
+
+.qq-upload-remove
+  color #F57F02
+
+.vevs_approved, .supported, .draft, .om_approved, .supported, .vrk_approved, .edit_public_info, #logout, .state_variation
+  display none
+
+.add-law-button
+  display block
+  line-height 28px
+  padding 0 8px
+  float right
+  color #fff
+  cursor pointer
+  background #818F98 url("../img/button-back-gray.png") repeat-x left bottom
+  border 1px solid #495764
+  border-left-color #828f98
+  text-shadow 0px -1px 1px rgba(0,0,0,0.2)
+  font-family 'OpenSansSemibold'
+  -moz-user-select none
+  -webkit-user-select none
+  user-select none
+  border-radius 6px
+  position relative
+  zoom 1
+  behavior url(/js/PIE.htc)
+
+#modal, #modal-kannatus, #modal-aloite
+  width 100%
+  height 100%
+  position fixed
+  display none
+  top 0
+  left 0
+  .overlay
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background transparent url('../img/modal-overlay.png') repeat left top
+
+  .modal-window
+    background #f2f2f2
+    -webkit-box-shadow 0px 2px 15px #000
+    -mox-box-shadow 0px 2px 15px #000
+    box-shadow 0px 2px 15px #000
+    position absolute
+    top 50%
+    left 50%
+    zoom 1
+    behavior url(/js/PIE.htc)
+    border 1px solid #fff
+    margin-left -250px
+    margin-top -80px
+    width 500px
+    height 160px
+    border-radius 8px
+    h2
+      font-size 16px
+      font-family 'OpenSansSemibold'
+      font-weight normal
+      background #9dca32 url('../img/lift-header-back.png') repeat-x left bottom
+      background-color #9dca32
+      color #fff
+      padding 4px 8px
+      -webkit-border-radius 6px
+      -moz-border-radius 6px
+      border-radius 6px
+      position relative
+      zoom 1
+      behavior url(/js/PIE.htc)
+      margin 2px
+    h3
+      font-size 16px
+      margin 0
+      padding 9px
+      color #333
+      font-family 'OpenSansSemibold'
+      font-weight normal
+    p
+      padding 20px
+      margin 0
+    .cancel
+      float left
+      margin 20px
+    .continue
+      float right
+      margin 20px
+
+#modal-aloite .overlay
+  background #fff url('../img/main-back.jpg') no-repeat center top
+
+#modal-disclaimer
+  position fixed
+  width 100%
+  height 100%
+  top 0
+  left 0
+  background #fff url('../img/main-back.jpg') no-repeat center top
+  .modal-window
+    width 760px
+    margin 0 auto
+    padding 30px 0 0 0
+    text-align center
+    .button
+      margin 10px
+    .button.left
+      float left
+    .button.right
+      float right
+
+    h2
+      overflow hidden
+      text-indent -99999px
+      height 56px
+      background transparent url('../img/disclaimer-logo.png') no-repeat center top
+
+    p
+      margin 0
+      padding 10px 0
+      clear both
+
+
+#aloite
+  .keywords
+    width 100%
+    height 22px
+    clear both
+    list-style none
+    padding 0
+    font-size 13px
+    margin 14px 0 24px 0
+    li
+      float left
+      line-height 13px
+      padding 4px 5px 5px 6px
+      background-color #e7e7e7
+      border 1px solid #FFF
+      margin 0 3px
+      border-radius 4px
+      -webkit-box-shadow 0px 1px 2px #6d6d6d
+      -mox-box-shadow 0px 1px 2px #6d6d6d
+      box-shadow 0px 1px 2px #6d6d6d
+      position relative
+      zoom 1
+      behavior url(/js/PIE.htc)
+
+#vetuma
+  .overlay
+    position absolute
+    top 0
+    left 0
+    background #fff
+    width 100%
+    height 100%
+    cursor pointer
+  .overlay-1
+    background #fff url('../img/vetuma1.png') no-repeat center center
+  .overlay-2
+    background #fff url('../img/vetuma2.png') no-repeat center center
+
+#tooltip
+  width 300
+  height 300
+  background-color #FFF
+
+#top-disclaimer
+  background #000
+  color #fff
+  padding 5px
+  text-align center
+  a
+    color #89E2FF
+  a:hover
+    color #fff
+
+.notification.supported
+  background-position left 20px
+
+.notification.supported.top
+  background #f2f2f2
+  border 1px solid #fff
+  padding 10px
+  position relative
+  zoom 1
+  behavior url(/js/PIE.htc)
+  -webkit-box-shadow 0px 2px 5px #b3b5b6
+  -moz-box-shadow 0px 2px 5px #b3b5b6
+  box-shadow 0px 2px 5px #b3b5b6
+  margin-bottom 20px
+  span
+    background url("../img/file-ok.png") no-repeat left center
+    padding 20px 20px 20px 25px

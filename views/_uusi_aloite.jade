@@ -1,0 +1,130 @@
+.page#uusi-aloite
+    .wrap
+        .col.span-3
+            h2.subpage Uusi kansalaisaloite
+            form#newpetitionform.ui-form
+                .field.text
+                    span.required-text * tähdellä merkityt kentät ovat pakollisia
+                    h4 Aloitteen otsikko
+                        span.required *
+                    input(type='text', name='name')
+                .field.date
+                    h4 Päivämäärä
+                        span.required *
+                    input(type='text', name='date', placeholder='PP.KK.VVVV')
+                .field.radio
+                    h4 Aloitteen tyyppi
+                        span.required *
+                    .input-btns.horizontal
+                        label
+                            input(type='radio', name='type', value='Lakiehdotus')
+                            span Lakiehdotus
+                        label
+                            input(type='radio', name='type', value='Ehdotus lainvalmisteluun ryhtymisestä')
+                            span Ehdotus lainvalmisteluun ryhtymisestä
+                hr
+                .field.text
+                    div.keyword-field(data-name='keywords')
+                        h4 Aloitteen sisältämät asiasanat
+                    div(style="clear:both;")
+                hr
+                .field.radio.no-margin
+                    h4 Aloitteen saama taloudellinen tuki
+                        span.required *
+                    .input-btns.horizontal
+                        label
+                            input(type='radio', name='support', value='Ei ole')
+                            span Ei ole
+                        label
+                            input(type='radio', name='support', value='Aloite saa taloudellista tukea')
+                            span Aloite saa taloudellista tukea
+                .field.url
+                    label Linkki ilmoitukseen taloudellisesta tuesta (www-osoite)
+                    input(type='text', name='support_url')
+                hr
+                field.url
+                    h4 Aloitteen hankkeen kotisivun osoite
+                    input(type='text', name='homepage_url')
+                hr
+                .field.text
+                    h4 Aloitteen sisältö
+                        span.required *
+                    textarea(rows='9', name='law_proposal')
+                .field-text
+                    div.attachments#law-proposal-attachments(data-name='law_proposal_attachments')
+                    div(style="clear:both;")
+                hr
+                .field.text
+                    h4 Perustelut
+                        span.required *
+                    textarea(rows='9', name='rationale')
+                .field-text
+                    div.attachments#rationale-attachments(data-name='rationale_attachments')
+                    div(style="clear:both;")
+                .field.text
+                    h4 Viittaus ajantasaiseen lakiin
+                    .law_reference
+                        span.field-area
+                            label Numero
+                            input.lawnum.small(type='text', name='law_references[0][reference_number]')
+                        span.field-area
+                            p /
+                        span.field-area
+                            label Vuosi
+                            input.lawyear.small(type='text', name='law_references[0][reference_year]')
+                        span.field-area
+                            p TAI
+                        span.field-area
+                            label Lain nimi
+                            input.lawname.medium(type='text', name='law_references[0][reference_name]')
+                        span.field-area
+                            label §
+                            input.small(type='text', name='law_references[0][reference_section]')
+                        span.field-area.no-margin
+                            label Momentti
+                            input.small.no-margin(type='text', name='law_references[0][reference_momentum]')
+                    div.add-law-button.clone_btn(data-name='new-law') Uusi rivi +
+                    div(style="clear:both;")
+                hr
+                .field.text
+                    p
+                        | Prototyyppi ei lähetä postia syötettyihin sähköpostiosoitteisiin.
+                    div.email-field.first(data-name='initiators')
+                        h4 Vireillepanijat
+                            span.required *
+                    div.email-field(data-name='representatives')
+                        h4 Edustaja
+                            span.required *
+                    div.email-field.last(data-name='reserves')
+                        h4 Varaedustaja
+                            span.required *
+                    div(style="clear:both;")
+
+                .validation-error * Täytä kaikki vaaditut kentät
+
+            .button-row
+                .text-links
+                    a(href='/#') Peruuta ja palaa etusivulle »
+                    a(href='/#') Tallenna ja palaa etusivulle »
+                a.button.submit#submit-add-form(href='#')
+                    |Tallenna ja lähetä
+                    br
+                    |kutsut osallistujille
+                div(style='clear:both;')
+
+        .col.aside.help
+            .aside-content
+                h2 Kaipaatko apua
+                p
+                    | Jos kaipaat apua aloitteen tekemisessä tai sinulla on muuta kysyttävää kansalaisaloitteista,
+                    | ota yhteyttä Oikeusministeriöön:
+
+                p puh. 09 160 03 tai 09 578 13
+                p email: osallistymisymparisto.om@om.fi
+
+                p Voit ottaa yhtettä myös yhteydenottolomakkeella:
+                a.button.dummy(href='') Ota yhteyttä
+
+        div(style='clear:both;')
+
+
