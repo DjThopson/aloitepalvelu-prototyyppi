@@ -9,4 +9,4 @@ Huomaa, että tämä on sinänsä oikeaan vaatimusmäärittelyyn karkeasti perus
 
 Aloitepalvelu on osa Osallistumisympäristö-hanketta (http://www.osallistumisymparisto.fi)
 
-ProtoSonni on viikon mittainen prorotypointipalvelu, johon voi tutustua osoitteessa www.protosonni.fi
+ProtoSonni on viikon mittainen prototypointipalvelu, johon voi tutustua osoitteessa www.protosonni.fi
